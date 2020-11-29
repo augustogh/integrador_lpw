@@ -20,7 +20,9 @@ Clonar repositorio
     
 Alternativa
     $ docker-compose up -d
-    # esperar a que levanten las instancias
+    
+    esperar a que levanten las instancias
+    
     $ mysql -h 127.0.0.1 -u root --password=dbpass < basealumnos.sql
 
 ## Comandos disponibles
