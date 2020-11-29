@@ -18,12 +18,11 @@ Clonar repositorio
 ## Levantar ambiente:
     ./init.sh
     
-Alternativa
-    $ docker-compose up -d
+Alternativa:
+  $ docker-compose up -d
     
-    esperar a que levanten las instancias
-    
-    $ mysql -h 127.0.0.1 -u root --password=dbpass < basealumnos.sql
+esperar a que levanten las instancias para luego ejecutar;
+  $ mysql -h 127.0.0.1 -u root --password=dbpass < basealumnos.sql
 
 ## Comandos disponibles
 
