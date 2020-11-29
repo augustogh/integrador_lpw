@@ -34,15 +34,39 @@ header {
 }
 
 
+/* acceso */
+
+.acceso {
+    background-color: #fafafa;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    /* IMPORTANTE */
+    text-align: center;
+    position: fixed;
+}
+
+.contacc {
+    padding-top: 100px;
+    padding-left: 30%;
+    position: fixed;
+    float: left;
+}
+
+#login {
+    display: none;
+}
+
+
 /* crossfade */
 
 #cf {
     position: relative;
-    margin: 0 auto;
+    margin: auto;
 }
 
 #cf img {
-    width: 98%;
+    width: 97%;
     position: absolute;
     left: 0;
     -webkit-transition: opacity 1s ease-in-out;
