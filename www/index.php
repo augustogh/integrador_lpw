@@ -31,29 +31,36 @@
             show('login');
         } 
     </script> 
-    </script> 
-<!--
+
 		<div id="cf">
 			<img class="bottom" src="./img/img03.jpg" />
 			<img class="top" src='./img/img04.jpg' />
 		</div>
-	-->
 
 
 	<nav class="contacc" >
 		<div class="acceso" id="login">
-		<form action="head.php" method="POST" enctype="multipart/form-data">
+		<form action="./auth/control.php" method="POST" enctype="multipart/form-data">
+		<?if ($_GET["errorusuario"]=="si"){?>
+			bgcolor=red><span style="color:ffffff"><b>Datos incorrectos</b></span>
+		<?}else{?>
+			
+		<?}?>
 				<table>
 					<tbody>
 						<tr>
 							<td>&nbsp;Usuario:</td>
-							<td>&nbsp;<input type="nombre" name="a_nombre" value=""/> <br/></td>
+							<td>&nbsp;<input type="text" name="usuario" value=""/> <br/></td>
 						</tr>
 						<tr>
 							<td>&nbsp;Contraseña:</td>
-							<td>&nbsp;<input type="apellido" name="b_apellido" value=""/><br/></td>
+							<td>&nbsp;<input type="password" name="contraseña" value=""/><br/></td>
 						</tr>
-
+						
+						<tr>
+							<td> <input type="Submit" value="ENTRAR"></td>
+							<!--<td></br><button class="btn_login">Aceptar</button></td>-->
+						</tr>
 					</tbody>
 				</table>
 		</div>
@@ -61,3 +68,4 @@
 
 	</body>
 </html> 
+
