@@ -1,4 +1,4 @@
-<?php include ("./auth/sesion.php");?>
+<?php include ("../auth/sesion.php");?>
 <?php
 //usuario está logueado?
 if ($_SESSION["autentificado"] != "SI") {
@@ -24,16 +24,40 @@ else {
 }
 ?>
 <html>
+<head>
+    <link rel="stylesheet" href="../css/app_style.css">
+</head>
 <body>
-    <div class="coco">
-        <!---<img class="arrow" src="assets/images/demo-arrow-up.png" alt="arrow" height="120">-->
-        <h1>Facultad de medicina</h1>
-        <ul>
-            <li><a href="index.html" class="active">Basic</a></li>
-            <li><a href="navigation-icons.html">Icons</a></li>
-            <li><a href="navigation-dark.html">Icons Dark</a></li>
-            <li><a href="navigation-round.html">Round</a></li>
-        </ul>
-    </div>
+   <!-- menu -->
+   <main>
+        <h1>
+            Facultad de Medicina
+            <span> with cool links </span>
+        </h1>
+        <input type="checkbox" id="myInput">
+        <label for="myInput">
+            <span class="bar top"></span>
+            <span class="bar middle"></span>
+            <span class="bar bottom"></span>
+            </label>
+        <aside>
+            <div class="aside-section aside-left">
+                <div class="aside-content">
+                    <p> Gestión de Alumnos</p>
+                    <button class="button"> <a href="../index.php">inicio</a></button>
+                </div>
+            </div>
+            <div class="aside-section aside-right">
+                <ul class="aside-list">
+                    <li><a href="" class="aside-anchor">lista de Ingresantes</a></li>
+                    <li><a href="" class="aside-anchor">ata de ingresante</a></li>
+                    <li><a href="" class="aside-anchor">baja de ingresante</a></li>
+                    <li><a href="" class="aside-anchor">modificar ingresante</a></li>
+                    <li><a href="" class="aside-anchor">volver</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+<!-- fin menu -->
 </body>
 </html>

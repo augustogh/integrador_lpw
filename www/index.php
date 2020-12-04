@@ -36,8 +36,7 @@
 			<img class="bottom" src="./img/img03.jpg" />
 			<img class="top" src='./img/img04.jpg' />
 		</div>
-
-
+	
 	<nav class="contacc" >
 		<div class="acceso" id="login">
 		<form action="./auth/control.php" method="POST" enctype="multipart/form-data">
@@ -55,17 +54,13 @@
 						<tr>
 							<td>&nbsp;Contraseña:</td>
 							<td>&nbsp;<input type="password" name="contraseña" value=""/><br/></td>
-						</tr>
-						
+						</tr>					
 						<tr>
 							<td> <input type="Submit" value="ENTRAR"></td>
-							<!--<td></br><button class="btn_login">Aceptar</button></td>-->
 						</tr>
 					</tbody>
 				</table>
 		</div>
 	</nav>
-
 	</body>
 </html> 
-

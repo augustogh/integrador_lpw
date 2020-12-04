@@ -3,7 +3,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #38618c;
 }
 
 li {
@@ -19,29 +19,28 @@ li a {
 }
 
 li a:hover:not(.active) {
-    background-color: rgb(32, 158, 0);
+    background-color: #ff5964;
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: #38618c;
 }
 
 header {
-    background: rgba(0, 0, 0, 0.9);
+    background: #38618c;
     width: 98%;
     position: fixed;
     z-index: 20;
 }
 
 
-/* acceso */
+/***** acceso ****+*/
 
 .acceso {
     background-color: #fafafa;
     margin: 1rem;
     padding: 1rem;
     border: 2px solid #ccc;
-    /* IMPORTANTE */
     text-align: center;
     position: fixed;
 }
@@ -58,7 +57,7 @@ header {
 }
 
 
-/* crossfade */
+/***** crossfade ******/
 
 #cf {
     position: relative;
@@ -104,14 +103,3 @@ header {
 
 
 /* boton aceptar */
-
-.btn {
-    text-decoration: none;
-    padding: 10px;
-    font-weight: 600;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #1883ba;
-    border-radius: 6px;
-    border: 2px solid #0016b0;
-}
