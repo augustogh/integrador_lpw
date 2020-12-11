@@ -6,7 +6,7 @@ if ($_SESSION["autentificado"] != "SI") {
     header("Location: ../index.php");
 } 
 else {
-    //sino, calculamos el tiempo transcurrido
+    //caso contrario, calculamos el tiempo transcurrido
     $fechaGuardada = $_SESSION["ultimoAcceso"];
     $ahora = date("Y-n-j H:i:s");
     $tiempo_transcurrido = (strtotime($ahora)-strtotime($fechaGuardada));
@@ -32,7 +32,7 @@ else {
    <main>
         <h1>
             Facultad de Medicina
-            <span> with cool links </span>
+            <span> Gestión de Alumnos</span>
         </h1>
         <input type="checkbox" id="myInput">
         <label for="myInput">
@@ -50,7 +50,7 @@ else {
             <div class="aside-section aside-right">
                 <ul class="aside-list">
                     <li><a href="" class="aside-anchor">lista de Ingresantes</a></li>
-                    <li><a href="" class="aside-anchor">ata de ingresante</a></li>
+                    <li><a href="./edit.php" class="aside-anchor">alta de ingresante</a></li>
                     <li><a href="" class="aside-anchor">baja de ingresante</a></li>
                     <li><a href="" class="aside-anchor">modificar ingresante</a></li>
                     <li><a href="" class="aside-anchor">volver</a></li>
